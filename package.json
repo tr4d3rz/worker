@@ -1,0 +1,22 @@
+{
+  "name": "worker",
+  "version": "0.1.0",
+  "description": "worker for the stock data mine",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tr4d3rz/worker.git"
+  },
+  "keywords": [
+    "worker",
+    "stockdata"
+  ],
+  "author": "tr4d3rz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tr4d3rz/worker/issues"
+  }
+}
