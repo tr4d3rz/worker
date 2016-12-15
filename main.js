@@ -1,6 +1,14 @@
 
-var express = require('express');
-var app = express();
+var express = require('express'),
+    fs      = require('fs'),
+    app     = express(),
+    eps     = require('ejs'),
+    morgan  = require('morgan');
+
+Object.assign=require('object-assign')
+
+app.engine('html', require('ejs').renderFile);
+app.use(morgan('combined'))
 
 // setup ports
 var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080;

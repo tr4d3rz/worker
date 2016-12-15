@@ -17,6 +17,10 @@
     "url": "https://github.com/tr4d3rz/worker/issues"
   },
   "dependencies": {
-    "express": "~4.14.0"
+    "express": "~4.14.0",
+    "fs": "0.0.1-security",
+    "ejs": "~2.5.5",
+    "object-assign": "~4.1.0",
+    "morgan": "~1.7.0"
   }
 }
