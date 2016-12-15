@@ -18,5 +18,8 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tr4d3rz/worker/issues"
+  },
+  "dependencies": {
+    "express": "~4.14.0"
   }
 }
