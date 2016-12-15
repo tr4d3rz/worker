@@ -29,6 +29,8 @@
     "object-assign": "~4.1.0",
     "fs": "0.0.1-security",
     "morgan": "~1.7.0",
-    "ejs": "~2.5.5"
+    "ejs": "~2.5.5",
+    "chai": "~3.5.0",
+    "chai-http": "~3.0.0"
   }
 }
