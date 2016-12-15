@@ -1,5 +1,5 @@
 {
-  "name": "worker",
+  "name": "worker-main",
   "version": "0.1.0",
   "description": "worker for the stock data mine",
   "main": "main.js",
