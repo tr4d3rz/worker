@@ -7,6 +7,10 @@
     "start": "node main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engine": {
+    "node": "*",
+    "npm": "*"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/tr4d3rz/worker.git"
