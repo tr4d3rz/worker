@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/views');
 
 app.get('/', function(request, response) {
-  response.send('Test da GITHUB.COM!!!');
+  response.send('OK !!!!Test da GITHUB.COM!!!');
 });
 
 app.listen(app.get('port'), function() {
