@@ -16,3 +16,8 @@ app.get('/', function(request, response) {
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
+
+var nCnt = 0;
+setTimeout(function(){
+	console.log("--->setTimeout " + nCnt++);
+}, 2000);
