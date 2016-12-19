@@ -1,0 +1,17 @@
+
+var express = require('express'),
+var app     = express();
+
+// setup ports
+var server_port = process.env.PORT || 8080;
+
+app.get('/', function(req, res) {
+
+	res.end('Node JS running!');
+
+});
+
+// server listens in on port
+app.listen(server_port, server_ip_address, function () {
+	 console.log( "Listening on " + server_ip_address + ", server_port " + server_port );
+});

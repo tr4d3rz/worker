@@ -1,26 +1,18 @@
+var express = require('express');
+var app = express();
 
-var express = require('express'),
-    fs      = require('fs'),
-    app     = express(),
-    eps     = require('ejs'),
-    morgan  = require('morgan');
+app.set('port', (process.env.PORT || 5000));
 
-Object.assign=require('object-assign')
+app.use(express.static(__dirname + '/public'));
 
-app.engine('html', require('ejs').renderFile);
-app.use(morgan('combined'))
+// views is directory for all template files
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
 
-// setup ports
-var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
-var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
-
-app.get('/', function(req, res) {
-
-	res.end('Node JS running!');
-
+app.get('/', function(request, response) {
+  response.render('pages/index');
 });
 
-// server listens in on port
-app.listen(server_port, server_ip_address, function () {
-	 console.log( "Listening on " + server_ip_address + ", server_port " + server_port );
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });
